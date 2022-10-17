@@ -1,0 +1,234 @@
+.loginBg{
+    // background-color: aquamarine;
+    .wrapper {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    @media (min-width: 576px) {
+        .wrapper {
+            max-width: 540px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .wrapper {
+            max-width: 720px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .wrapper {
+            max-width: 960px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .wrapper {
+            max-width: 1140px;
+        }
+    }
+    
+    /*  /wrapper */
+    
+    .dgrid {
+        display: grid;
+    }
+    
+    button,
+    input,
+    select {
+        -webkit-appearance: none;
+        outline: none;
+    }
+    
+    button,
+    .btn,
+    select {
+        cursor: pointer;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    
+    .w3lLoginForm .formSection {
+        background: url(../assets/img/bgimage.jpg) no-repeat center fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        position: relative;
+        display: grid;
+        align-items: center;
+        min-height: 100vh;
+        z-index: 0;
+        padding: 15px 0;
+    }
+    
+    .form-fields {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .w3lLoginForm .formSection:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.65);
+        position: absolute;
+        top: 0;
+        min-height: 100%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+    
+    .w3lLoginForm .logo {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .w3lLoginForm .logo a {
+        font-size: 36px;
+        color: #fff;
+        line-height: 40px;
+        font-weight: normal;
+    }
+    
+    .w3lLoginForm .loginForm {
+        background: #fff;
+        max-width: 600px;
+        margin: 0px auto;
+        box-shadow: 0px 9px 24px 5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .w3lLoginForm .loginForm form input[type="text"],
+    .w3lLoginForm .loginForm form input[type="email"],
+    .w3lLoginForm .loginForm form input[type="password"] {
+        -webkit-appearance: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #777777;
+        border: none;
+        width: 100%;
+        background-color: rgba(88, 83, 152, 0.03);
+        padding: 24px;
+    }
+    
+    .w3lLoginForm .loginForm form input[type="text"] {
+        border-right: 1px solid #e8e8e8;
+    }
+    
+    .w3lLoginForm .loginForm form input[type="text"]:focus,
+    .w3lLoginForm .loginForm form input[type="email"]:focus,
+    .w3lLoginForm .loginForm form input[type="password"]:focus {
+        outline: none;
+        background-color: #fff;
+        box-shadow: none;
+    }
+    
+    .w3lLoginForm .loginForm form button {
+        -webkit-appearance: none;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+        color: #ffffff;
+        background: #2abda4;
+        height: 55px;
+        border: none;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        opacity: 0.8;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .w3lLoginForm .loginForm form button:hover {
+        background: #2abda4;
+        transition: 0.3s ease-in-out;
+        opacity: 1;
+    }
+    
+    .w3lLoginForm .loginForm form button:focus {
+        outline: none;
+    }
+    
+    .newSignup {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+        margin: 10px auto 0;
+        flex-wrap: wrap;
+    }
+    
+    .newSignup a {
+        font-size: 15px;
+        color: #2abda4;
+        text-align: center;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+    
+    p.signup {
+        font-size: 15px;
+        color: #e6e6e6;
+        text-align: center;
+    }
+    
+    .newSignup a:hover {
+        text-decoration: underline;
+    }
+    
+    /*  copyright */
+    .copyRight {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 35px;
+    }
+    
+    .copyRight p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    .copyRight p a {
+        color: #fff;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    
+    .copyRight p a:hover {
+        text-decoration: none;
+    }
+    
+    /*  /copyright */
+    
+    
+    @media (max-width: 767px) {
+        .copy-right {
+            bottom: 5px;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .form-fields {
+            grid-template-columns: 1fr;
+        }
+    
+        .w3lLoginForm .loginForm form input[type="text"] {
+            border-right: none;
+            border-bottom: 1px solid #e8e8e8;
+        }
+    }
+}

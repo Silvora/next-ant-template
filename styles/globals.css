@@ -1,0 +1,111 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
+/* @media (min-width: 576px) {
+  .wrapper {
+      max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+      max-width: 720px;
+  }
+} */
+
+/* @media (min-width: 992px) {
+  .wrapper {
+      max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+      max-width: 1140px;
+  }
+} */
+
+
+/* #components-layout-demo-custom-trigger .trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  /* transition: color 0.3s; 
+}
+#components-layout-demo-custom-trigger .trigger .layout_MenuTitle__lfoHJ{
+  display: none;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+  background-color: red;
+} */
+.ant-menu{
+  background-color: #1a2035 !important;
+}
+.ant-menu-item{
+  background-color: #1a2035;
+  height: 45px !important;
+ }
+ /* .ant-menu-item:hover{
+  background-color: red !important
+ } */
+ /* // 选中菜单状态 */
+ .ant-menu-item-selected {
+   background-color:rgba(199,199,199,.2) !important;
+   color: white !important;
+ }
+ /* // 设置未选中菜单项鼠标滑过样式 */
+ .ant-menu-item-active {
+  background: rgba(199,199,199,.2) !important;
+   color: #b9babf!important;
+ }
+
+.tableContent .ant-table{
+  padding-top: 50px;
+  margin-left: 25px;
+  background-color: #1a2035;
+  color: rgba(169,175,187,.82);
+}
+
+.tableContent .ant-table-tbody>tr>td{
+  border-bottom: 1px solid rgba(181,181,181,.1);
+
+}
+.tableContent .ant-table-cell-row-hover,
+.tableContent .ant-table-cell-row-hover>td{
+    background-color: rgba(0,0,0, .2)!important
+    
+}
+
+
+@import "../node_modules/antd/dist/antd.min.css";
+@import "@ant-design/flowchart/dist/index.css";
+/* @import "../assets/css/atlantis.min.css";
+@import "../assets/css/bootstrap.min.css";
+@import "../assets/css/fonts.min.css";
+@import "../assets/css/demo.css"; */

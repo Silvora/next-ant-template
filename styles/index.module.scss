@@ -1,0 +1,120 @@
+$intervalDiv: 25px;
+
+.container {
+  width: 100%;
+}
+.ChartsList{
+  width: 100%;
+  height: 530px;
+  display: flex;
+}
+.leftCharts{
+  width: 75%;
+  height: 530px;
+  background-color: #1a2035;
+  border-radius:5px;
+}
+.rightCharts{
+  width: 25%;
+  height: 530px;
+}
+.areaTitle{
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid rgba(181,181,181,.1);
+  span{
+    font-size: 24px;
+    color: #fff;
+    line-height: 60px;
+    padding-left: $intervalDiv;
+  }
+}
+.tinyAreaCharts{
+  background-color: #6861ce;
+  height:  290px;
+  margin-left: $intervalDiv;
+  border-radius:5px;
+  margin-bottom: $intervalDiv;
+  
+}
+.tinyAreaTitle{
+  height: 150px;
+  font-size: 24px;
+  color: #fff;
+  p{
+    padding: 10px 0;
+    margin: 0;
+    padding-left: $intervalDiv;
+    &:nth-child(2){
+      font-size: 16px;
+    }
+  }
+}
+.ringCharts{
+  height: 215px;
+  background-color: #1572e8;
+  margin-left: $intervalDiv;
+  border-radius:5px;
+}
+
+
+
+.StatisticList{
+  margin-bottom: $intervalDiv;
+}
+.Statistic{
+  .StatisticList_1{
+    background: linear-gradient(-45deg,#06418e,#1572e8);
+    border: none;
+    border-radius: 5px;
+  }
+  .StatisticList_2{
+    background: linear-gradient(-45deg,#2a20ac,#6861ce);
+    border: none;
+    border-radius: 5px;
+  }
+  .StatisticList_3{
+    background-color: #2bb930;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.Epidemic{
+  width: 100%;
+  height: 500px;
+  margin-top: $intervalDiv;
+  background-color: #1a2035;
+  border-radius: 5px;
+  .EpidemicTitle{
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    padding-left: $intervalDiv;
+    line-height: 60px;
+    color: #fff;
+    border-bottom: 1px solid rgba(181,181,181,.1);
+  }
+  .EpidemicCharts{
+    width: 100%;
+    height: 440px;
+    display: flex;
+  
+    .left_Epidemic_table{
+      width: 60%;
+      height: 100%;
+      .tableContent{
+        padding-top: 25px;
+        
+      }
+    }
+    .right_Epidemic_charts{
+      width: 40%;
+      height: 100%;
+    }
+  }
+}
+
+
+
+
