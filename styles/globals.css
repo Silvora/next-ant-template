@@ -15,6 +15,35 @@ a {
   box-sizing: border-box;
 }
 
+
+@media (max-width: 1789px) {
+  body {
+      min-width: 1580px;
+  }
+  section{
+    min-width: 1580px;
+  }
+}
+
+
+@media (max-width: 1549px) {
+  body {
+      min-width: 1260px;
+  }
+  section{
+    min-width: 1580px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body {
+      min-width: 1150px;
+  }
+  section{
+    min-width: 1580px;
+  }
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -102,6 +131,13 @@ a {
     
 }
 
+
+.People .ant-statistic-title,
+.People .ant-statistic-content{
+  color: #fff
+}
+
+@import "./loading.css";
 
 @import "../node_modules/antd/dist/antd.min.css";
 @import "@ant-design/flowchart/dist/index.css";

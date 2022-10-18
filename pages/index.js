@@ -1,15 +1,25 @@
 import Styles from '../styles/index.module.scss'
-// import { Button } from 'antd';
+//Layouts
 import Layouts from "../layouts/layouts"
 
+//center
 import AreaCharts from '../components/index/area'
 import TinyAreaChart from '../components/index/tinyArea'
 import RingCharts from '../components/index/ring'
 
+//top
 import StatisticList from '../components/index/statistic'
 
+//table
 import Tables from '../components/index/table'
 import WordCloudCharts from '../components/index/wordCloud'
+
+//footer
+import TimeLine from '../components/index/timeLine'
+import Tickets from '../components/index/tickets'
+import People from '../components/index/people'
+
+import Footer from '../components/index/footer'
 
 export default function Home() {
   return (
@@ -48,7 +58,21 @@ export default function Home() {
           </div>
         </div>
 
+        <div className={Styles.DivLine}>
+          <div className={Styles.Time}>
+            <TimeLine></TimeLine>
+          </div>
+          <div className={Styles.Tickets}>
+            <Tickets></Tickets>
+          </div>
+          <div className={Styles.People}>
+            <People></People>
+          </div>
+        </div>
 
+        <div className={Styles.FooterCharts}>
+          <Footer></Footer>
+        </div>
       </div>
     </Layouts>
   )
